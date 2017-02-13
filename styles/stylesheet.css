@@ -3,12 +3,15 @@ h1 {
     font-size: 100px;
     text-align: center;
 }
+
 .row {
-    
     background-color: orange;
-    
     background-color: orange;
-    border-size:3px;
-    border-style:solid;
+    border-size: 3px;
+    border-style: solid;
     border-color: darkred;
+}
+
+body {
+    background-color: darkred;
 }
