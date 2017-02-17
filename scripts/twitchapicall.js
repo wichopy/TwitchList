@@ -2,10 +2,10 @@ var channels = ["playhearthstone", "ESL_SC2", "OgamingSC2", "cretetion", "freeco
 //var JSON = require('JSON');
 function addrow(chan, chanpicurl) {
   var newdiv = document.createElement('div');
-  var table = document.getElementById('streams-table');
+  var table =               document.getElementById('streams-table');
   //console.log(table);
   //console.log(newdiv);
-  newdiv.id = chan;
+  newdiv.id =             chan;
   newdiv.className = "row"; //can't use class its a reserved word, use className to update class.
   table.appendChild(newdiv);
   console.log("4. Create div and populate with channel name and logo.")
@@ -14,7 +14,7 @@ function addrow(chan, chanpicurl) {
                       <div class="col-md-2"><p id="${chan}-status">Status: Retreiving...</p></div>`;
 }
 
-function updatestatus(chan, newmsg) {
+function updatestatus(chan,newmsg){
   var status = document.getElementById(chan + '-status');
   console.log(chan + '-status');
   if (newmsg === "Status: Live") {
@@ -28,7 +28,7 @@ function grabuserdata(channel) {
   var userdata = $.getJSON('https://wind-bow.gomix.me/twitch-api/users/' + channel, function (data) {
       //console.log(data);
     })
-    .done(function () {
+      .done(function () {
       console.log("2. Finished grabbing data, console log retrieved data:");
       //console.log(userdata);
       console.log("3. Now adding row of stream.")
