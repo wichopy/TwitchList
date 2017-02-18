@@ -22,16 +22,27 @@
 <body>
     <h1>Twitch Streams</h1>
     <div class='container' id="icons">
-        <div class="bs-glyphicons">
-            <ul class="bs-glyphicons-list">
-                <li>
-                    <span class="glyphicon glyphicon-asterisk">All Streams</span>
-                </li>
-                <li><span class="glyphicon glyphicon-ok">Online</span>
-                </li>
-                <li><span class="glyphicon glyphicon-remove">Offline</span>
-                </li>
-            </ul>
+        <div class='row'>
+            <div class="col-md-8">
+                <div class="bs-glyphicons">
+                    <ul class="bs-glyphicons-list">
+                        <li>
+                            <span class="glyphicon glyphicon-asterisk">All</span>
+                        </li>
+                        <li>
+                            <span class="glyphicon glyphicon-ok">Online</span>
+                        </li>
+                        <li>
+                            <span class="glyphicon glyphicon-remove">Offline</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <form name="search">
+                    <input placehold="Search here...">
+                </form>
+            </div>
         </div>
     </div>
     <div id='streams-table' class="container">
